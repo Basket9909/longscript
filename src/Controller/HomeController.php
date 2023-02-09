@@ -22,17 +22,4 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',
         ]);
     }
-
-
-    // #[Route('/script', name: 'go_script')]
-    // public function script(): Response
-    // {
-
-    //     sleep(30);
-    //     dump('sleep ok');
-
-    //     return $this->render('index.html.twig', [
-    //         'controller_name' => 'HomeController',
-    //     ]);
-    // }
 }
