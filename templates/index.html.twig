@@ -4,10 +4,31 @@
 
 {% block body %}
 
+<div class="container_global">
 
-<div class="containerglobal">
-    <a href="#">
-    <div class="button">Click</div>
-    </a>
+<h1>Script long (30 s) avec experience utilisateur</h1>
+{% for messages in app.flashes %}
+        <div class="alert alert-success mt-4">
+        {% for message in messages %}
+            <p>{{ message | raw }}</p>
+{% endfor %}
 </div>
+{% endfor %}
+    <form action="{{path('home')}}" method="post">
+        <input type="submit" value="Lancer le script" name="go_script" class="button">
+    </form>
+<img class="arrow" src="/img/gif.gif" alt="arrow">
+</div>
+
+
+<div class="container_secondary">
+    <div class="extensible_block">
+    <h2>Block extensible</h2>
+    <p class="up">Agrandir</p>
+    <p class="down">Reduire</p>
+    
+    </div>
+</div>
+
+
 {% endblock %}

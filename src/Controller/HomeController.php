@@ -11,8 +11,28 @@ class HomeController extends AbstractController
     #[Route('/', name: 'home')]
     public function index(): Response
     {
+        if(isset($_POST['go_script'])){
+            sleep(30);
+            $this->addFlash(
+                'success',
+                'Le script est fini'
+            );
+        }
         return $this->render('index.html.twig', [
             'controller_name' => 'HomeController',
         ]);
     }
+
+
+    // #[Route('/script', name: 'go_script')]
+    // public function script(): Response
+    // {
+
+    //     sleep(30);
+    //     dump('sleep ok');
+
+    //     return $this->render('index.html.twig', [
+    //         'controller_name' => 'HomeController',
+    //     ]);
+    // }
 }

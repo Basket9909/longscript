@@ -1,15 +1,22 @@
 html, body{
     width: 100%;
     height: 100%;
+    background-color: #009ee0;
 }
 
-.containerglobal{
+.container_global{
     background-color: #009ee0;
     width: 100%;
     height: 100%;
 }
 
-.containerglobal a{
+h1{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.container_global a{
     text-decoration: none;
 }
 
@@ -27,6 +34,7 @@ html, body{
     font-size: 2em;
     color: #009ee0;
     transition: all ease-in-out 0.3s;
+    border: none;
 }
 
 
@@ -35,3 +43,53 @@ html, body{
     background-color: #009ee0;
 
 }
+
+.alert{
+    text-align: center;
+}
+
+.arrow{
+    margin: 0 auto;
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%,-50%);
+    color: antiquewhite;
+}
+
+.container_secondary{
+    width: 100%;
+    height: auto;
+}
+
+.extensible_block{
+    width: 300px;
+    height: 150px;
+    background-color: white;
+    color: #009ee0;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    transition: all 0.5s ease-in-out;
+}
+
+h2{
+    color: #009ee0;
+    text-align: center;
+}
+
+p{
+    color: #009ee0;
+    text-align: center;
+  
+}
+
+p:hover{
+    cursor: pointer;
+}
+
+.down{
+    display: none;
+}
+
